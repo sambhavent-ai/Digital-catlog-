@@ -1,29 +1,115 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>સંભવ એન્ટરપ્રાઈઝ કેટલોગ</title>
+    <title>Sambhav Enterprise - Digital Catalog</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; }
-        .header { background: #2c3e50; color: white; padding: 20px; border-radius: 10px; }
-        .card { background: white; padding: 15px; margin: 10px auto; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); max-width: 400px; }
-        h1 { color: #f39c12; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #003366; /* ઘેરો વાદળી કલર */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px); /* માઉસ લઈ જતાં કાર્ડ થોડું ઉપર આવશે */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-weight: bold;
+        }
+        .product-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .product-desc {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .inquiry-btn {
+            background-color: #ff6600; /* ઓરેન્જ કલરનું બટન */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>સંભવ એન્ટરપ્રાઈઝ</h1>
-        <p>ડિજિટલ કેટલોગ</p>
+
+    <header>
+        <h1>Sambhav Enterprise</h1>
+        <p>Industrial Products Digital Catalog</p>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-image">Image: Power Drill</div>
+                <div class="product-title">Heavy Duty Power Drill</div>
+                <div class="product-desc">High-performance drill machine for industrial use.</div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">Image: Welding Machine</div>
+                <div class="product-title">Inverter Welding Machine</div>
+                <div class="product-desc">Advanced welding equipment with precision control.</div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">Image: Grinding Wheel</div>
+                <div class="product-title">Abrasive Grinding Wheel</div>
+                <div class="product-desc">Durable abrasive wheels for cutting and grinding.</div>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+
+        </div>
     </div>
-    <div class="card">
-        <h2>🛠️ પાવર ટુલ્સ</h2>
-        <p>ડ્રિલિંગ મશીન અને ઇન્ડસ્ટ્રિયલ ટુલ્સ.</p>
-    </div>
-    <div class="card">
-        <h2>🔩 ફાસ્ટનર્સ</h2>
-        <p>હાઈ-ક્વોલિટી નટ અને બોલ્ટ.</p>
-    </div>
+
 </body>
 </html>
-
